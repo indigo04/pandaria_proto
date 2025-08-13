@@ -45,7 +45,10 @@ export const Promo = () => {
           playsInline
           className={styles.bgVideo}
         >
-          <source src="/video.mp4" type="video/mp4" />
+          <source
+            src="https://res.cloudinary.com/dcfgaleph/video/upload/v1755076924/video_v0xqhe.mp4"
+            type="video/mp4"
+          />
         </video>
       </div>
       <div className={styles.content}>
