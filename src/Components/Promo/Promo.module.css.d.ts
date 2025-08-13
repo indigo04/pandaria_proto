@@ -1,5 +1,6 @@
 export default styles = {
   video: "video",
+  bgVideo: "bgVideo",
   content: "content",
   section: "section",
   paragraph: "paragraph",
@@ -8,4 +9,8 @@ export default styles = {
   gold: "gold",
   emerald: "emerald",
   wrapper: "wrapper",
+  caption: "caption",
+  container: "container",
+  playButton: "playButton",
+  soundButton: "soundButton",
 };

@@ -1,12 +1,3 @@
-:root {
-  --orange-color: #e05a1f;
-  --red-color: #e01f3e;
-  --light-green-color: #1fe086;
-  --dark-green-color: #3e6151;
-  --brown-color: #61493e;
-  --chocolate-color: #613e44;
-}
-
 html,
 body {
   max-width: 100vw;

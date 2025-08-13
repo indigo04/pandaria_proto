@@ -4,12 +4,11 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-end;
 }
 
 .video {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -18,7 +17,7 @@
   z-index: -1;
 }
 
-.video iframe {
+.bgVideo {
   position: absolute;
   pointer-events: none;
   aspect-ratio: 16 / 9;
@@ -26,6 +25,39 @@
   min-height: 135vh;
   object-fit: cover;
   transform: translate(-7%, -13%);
+}
+.playButton {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  color: white;
+  border: 1px solid yellow;
+  background-color: darkorange;
+  height: 36px;
+  width: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.soundButton {
+  cursor: pointer;
+  position: absolute;
+  bottom: 50px;
+  left: 100px;
+  color: white;
+  border: 1px solid yellow;
+  background-color: darkorange;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  z-index: 10;
 }
 
 .content {
@@ -36,6 +68,7 @@
   justify-content: center;
   align-items: center;
   z-index: 1;
+  margin-top: 8%;
   margin-right: 5%;
 }
 
@@ -74,7 +107,27 @@
   border: 1px solid yellow;
 }
 
+.gold:hover {
+  background-color: gold;
+}
+
 .emerald {
-  background-color: var(--light-green-color);
-  border: 1ox solid green;
+  background-color: seagreen;
+  border: 1px solid lightgreen;
+}
+
+.emerald:hover {
+  background-color: lightgreen;
+}
+
+.caption {
+  font-size: 1.5rem;
+  color: antiquewhite;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

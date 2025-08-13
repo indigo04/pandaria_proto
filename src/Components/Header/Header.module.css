@@ -1,0 +1,75 @@
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  left: 2.5%;
+  top: 2%;
+  height: fit-content;
+  padding: 10px;
+  background-color: #194736d9;
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  padding-inline: 20px;
+  gap: 20px;
+}
+
+.link {
+  color: white;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.item {
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 500ms;
+}
+
+.item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.wrapper {
+  justify-content: flex-end;
+  gap: 20px;
+  display: flex;
+}
+
+.button {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding-inline: 30px;
+}
+
+.gold {
+  background-color: darkorange;
+}
+
+.gold:hover {
+  background-color: gold;
+}
+
+.emerald {
+  background-color: seagreen;
+}
+
+.emerald:hover {
+  background-color: lightgreen;
+}
