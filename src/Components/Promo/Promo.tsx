@@ -4,11 +4,13 @@ import styles from "./Promo.module.css";
 import Image from "next/image";
 import { Header } from "../Header/Header";
 import logo from "../../../public/battle-net.png";
+import poster from "../../../public/poster.jpg";
 import { useRef, useState } from "react";
 
 export const Promo = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(true);
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
   const [isMuted, setIsMuted] = useState(true);
 
   const togglePlay = () => {
@@ -37,6 +39,9 @@ export const Promo = () => {
     <section className={styles.section}>
       <Header />
       <div className={styles.video}>
+        {!isVideoLoaded && (
+          <Image src={poster} alt="poster" className={styles.image} />
+        )}
         <video
           ref={videoRef}
           autoPlay
@@ -44,6 +49,7 @@ export const Promo = () => {
           loop
           playsInline
           className={styles.bgVideo}
+          onLoadedData={() => setIsVideoLoaded(true)}
         >
           <source
             src="https://res.cloudinary.com/dcfgaleph/video/upload/v1755076924/video_v0xqhe.mp4"

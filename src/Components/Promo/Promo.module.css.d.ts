@@ -13,4 +13,5 @@ export default styles = {
   container: "container",
   playButton: "playButton",
   soundButton: "soundButton",
+  image: "image",
 };
